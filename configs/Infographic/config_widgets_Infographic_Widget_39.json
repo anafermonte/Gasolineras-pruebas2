@@ -1,0 +1,159 @@
+{
+  "layout": {
+    "definition": [
+      {
+        "type": "stack",
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "activeItemIndex": 0,
+        "height": 100,
+        "content": [
+          {
+            "type": "component",
+            "isClosable": true,
+            "componentName": "jimu grid",
+            "componentState": {
+              "id": "0430233311074244-2"
+            },
+            "reorderEnabled": true,
+            "title": "jimu grid",
+            "id": "0430233311074244-2"
+          }
+        ]
+      }
+    ]
+  },
+  "dijits": [
+    {
+      "id": "0430233311074244-1",
+      "type": "text",
+      "visible": false,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 16,
+          "textColor": "#fff"
+        },
+        "text": "TÍTULO DE LA INFOGRAFÍA"
+      }
+    },
+    {
+      "id": "0430233311074244-2",
+      "type": "gauge",
+      "visible": true,
+      "config": {
+        "shape": "horizontal",
+        "statistics": [
+          {
+            "type": "value",
+            "config": {
+              "type": "stat",
+              "value": {
+                "type": "avg",
+                "field": "precio_gasolina_95"
+              }
+            }
+          },
+          {
+            "type": "range",
+            "name": "range1",
+            "config": {
+              "type": "fixed",
+              "value": 0
+            }
+          },
+          {
+            "type": "range",
+            "name": "range2",
+            "config": {
+              "type": "fixed",
+              "value": 1000
+            }
+          }
+        ],
+        "indicators": [],
+        "display": {
+          "backgroundColor": "#222222",
+          "gaugeColor": "#12ddf9",
+          "bgColor": "#1e5f6f",
+          "dataLabels": {
+            "state": true,
+            "textColor": "#ffffff",
+            "dataRange": true,
+            "targetValue": true
+          },
+          "currentValue": {
+            "state": true,
+            "isRatio": false,
+            "font": {
+              "font": {
+                "fontFamily": "Arial",
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "fontSize": "12",
+              "textColor": "#59bad8"
+            },
+            "dataFormat": {
+              "unit": "none",
+              "decimalPlaces": 2,
+              "digitSeparator": true,
+              "prefix": "",
+              "suffix": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "0430233311074244-3",
+      "type": "text",
+      "visible": false,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "top"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 12,
+          "textColor": "#fff"
+        },
+        "text": "Descripción: información adicional sobre esta infografía."
+      }
+    }
+  ],
+  "name": "horizontal_gauge",
+  "wid": "0430233311074244",
+  "dataSource": {
+    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
+    "name": "Gasolineras de España",
+    "layerId": "Gasolineras_9370",
+    "useSelection": true,
+    "filterByExtent": "on"
+  }
+}

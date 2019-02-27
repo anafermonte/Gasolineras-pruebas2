@@ -1,0 +1,78 @@
+{
+  "charts": [
+    {
+      "url": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "description": "",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "webMapLayerId": "Gasolineras_9370",
+      "mode": "category",
+      "name": "Gasolineras de España",
+      "highLightColor": "#ff0000",
+      "types": [
+        {
+          "type": "bar",
+          "display": {
+            "colors": [
+              "#5d9cd3",
+              "#eb7b3a",
+              "#a5a5a5",
+              "#febf29",
+              "#4673c2",
+              "#72ad4c"
+            ],
+            "showHorizontalAxis": true,
+            "showVerticalAxis": true,
+            "showLegend": false
+          }
+        }
+      ],
+      "categoryField": "provincia",
+      "operation": "sum",
+      "valueFields": [
+        "precio_gasolina_95",
+        "precio_gasóleo_a",
+        "precio_gasóleo_b",
+        "precio_bioetanol",
+        "precio_nuevo_gasóleo_a",
+        "precio_biodiesel",
+        "precio_gasolina_98",
+        "precio_gas_natural_comprimido",
+        "precio_gas_natural_licuado",
+        "precio_gases_licuados_del_petr"
+      ],
+      "sortOrder": {
+        "isLabelAxis": true,
+        "isAsc": true
+      }
+    }
+  ]
+}
